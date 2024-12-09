@@ -1,0 +1,13 @@
+/* #formTitle {
+    width: 100vh;
+}
+
+#formContent {
+    width: 100vh;
+}
+ */
+
+p  {
+    text-align: justify;
+    hyphens: auto;
+}

@@ -1,0 +1,21 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container px-5">
+    <div class="row gx-5 align-items-center mt-5 pt-5">
+        <form action="/submit" method="POST">
+            <!-- TITULO -->
+            <div class="form-group row">
+                <label for="title" class="col-sm-1 col-form-label">Título:</label>
+                <div class="col-sm-11">
+                    <input type="text" class="form-control" name="title" id="formTitle" required><br>
+                </div>
+            </div>
+            <!-- CONTENIDO -->
+            <label for="content">Contenido:</label>
+            <textarea class="form-control" id="formContent" name="content" rows="7" required></textarea>
+            <input type="submit" value="Nuevo post" class="btn btn-outline-dark my-2" >
+        </form>
+    </div>
+</div>
+
+<%- include("partials/footer.ejs") %>
